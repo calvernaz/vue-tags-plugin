@@ -49,40 +49,18 @@
             cursor: pointer;
         }
 
-        /* .taggly {
-            margin-right: 8px;
-            background: #E2E1DF;
-            padding: 5px 10px;
-            border-radius: 3px;
-            position: relative;
-            cursor: pointer;
-            transition: all .3s;
-            animation-duration: 1s;
-            animation-fill-mode: both;
-
-            span.taggly_text {
-                display: block;
-                max-width: 514px;
-                word-wrap: break-word;
-            }
-        } */
-
         .taggly {
             margin-right: 8px;
             background: #eee;
-            padding: 0 20px 0 23px;
-            border-radius: 3px 0 0 3px;
+            padding: 0 20px 0 20px;
+            border-radius: 3px;
             position: relative;
             cursor: pointer;
             color: #999;
             transition: all .3s;
             animation-duration: 1s;
             animation-fill-mode: both;
-            // display: inline-block;
-            // height: 26px;
             line-height: 26px;
-            // text-decoration: none;
-            // -webkit-transition: color 0.2s;
 
             span.taggly_text {
                 display: block;
@@ -90,5 +68,15 @@
                 word-wrap: break-word;
             }
         }
+
+        .taggly:hover {
+            color: white;
+            background-color: crimson;
+        }
     }
+    /*
+
+        }
+
+    } */
 </style>

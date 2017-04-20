@@ -72,11 +72,8 @@
         // y ^ ((x ^ y) & -(x < y))
       },
       deleteTag () {
-        if (this.tag) {
-          this.tag = ''
-        } else {
-          this.tags.pop()
-        }
+        if (this.tag) return
+        this.tags.pop()
         this.resizeInput(10)
       },
       resizeInput (width) {
@@ -88,6 +85,7 @@
 
 <style lang="scss">
     #taggly {
+        font: 12px/1.5 'PT Sans', serif;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
