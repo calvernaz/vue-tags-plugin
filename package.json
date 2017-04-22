@@ -1,7 +1,7 @@
 {
-  "name": "vue-tags-template",
-  "version": "0.0.2",
-  "description": "Tags plugin",
+  "name": "vue-tags-plugin",
+  "version": "0.0.3",
+  "description": "Vue tags plugin",
   "author": "Cesar Alvernaz <cesar.alvernaz@gmail.com>",
   "scripts": {
     "dev": "NODE_ENV=development node build/dev-server.js",
