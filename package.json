@@ -1,6 +1,6 @@
 {
   "name": "vue-tags-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tags plugin",
   "author": "Cesar Alvernaz <cesar.alvernaz@gmail.com>",
   "scripts": {
