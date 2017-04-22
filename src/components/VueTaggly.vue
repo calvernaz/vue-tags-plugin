@@ -2,7 +2,7 @@
     <div id="taggly" @click="click" :class="{ active: isActive }">
         <div class="input textarea clearfix" ref="textarea">
             <span class="taggly_placeholder" :style="{ opacity: showPlaceholder ? '1' : '0' }">Enter tags...</span>
-            <tags :tags="tags">
+            <tags :tags="tags" v-on:remove="remove">
                 <li>
                     <input type="text" @focus="focus" @blur="blur" @keydown.enter="keydownEvents" @input="input"
                            @keydown.delete.stop="deleteTag" v-model.trim="tag" ref="input" class="taggly_input"
@@ -78,6 +78,9 @@
       },
       resizeInput (width) {
         this.inputSize.width = width
+      },
+      remove (idx) {
+        this.$delete(this.tags, idx)
       }
     }
   }

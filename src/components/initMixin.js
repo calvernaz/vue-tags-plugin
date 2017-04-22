@@ -1,4 +1,4 @@
-var initMixin = {
+const initMixin = {
   mounted () {
     this.measurements.container.rect = this.$refs.textarea.getBoundingClientRect()
     this.measurements.container.style = window.getComputedStyle(this.$refs.textarea)
